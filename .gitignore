@@ -1,0 +1,11 @@
+node_modules/
+shots/
+.browser-profile/
+source-images/
+research/
+*.zip
+*.log
+
+.browser-*/
+qa-report/
+*.tar.gz

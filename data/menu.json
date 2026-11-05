@@ -1,0 +1,93 @@
+{
+  "source": "https://es.restaurantguru.com/La-Despensa-del-Aceite-Fuengirola/menu",
+  "checked": "2026-11-05",
+  "status": "Transcripción visual de fotografías públicas. Precios no confirmados con el restaurante; páginas de hace 12 meses salvo alpargatas, niños y postres (hace 3 meses).",
+  "sections": [
+    {"name":"Ibéricos y quesos","photo":"carta-5.jpg","items":[
+      {"name":"Jamón ibérico de bellota D.O. Los Pedroches, Córdoba","price":24.5,"half":19.5},
+      {"name":"Lomito ibérico de bellota","price":19.5},
+      {"name":"Caña de lomo ibérica de bellota","price":19.5},
+      {"name":"Salchichón ibérico de bellota","price":12.5},
+      {"name":"Chorizo ibérico de bellota","price":12.5},
+      {"name":"Jamón ibérico de bellota y queso curado 100% oveja","price":22.5},
+      {"name":"Combinado ibérico de bellota","description":"Caña de lomo, salchichón, chorizo y jamón","price":19.5,"note":"Precio con reflejo; parece 19,50, confirmar."},
+      {"name":"Queso curado 100% oveja","price":16.5,"half":9.5}
+    ]},
+    {"name":"Ensaladas","photo":"carta-2.jpg","items":[
+      {"name":"Ensaladilla rusa estilo Huelva","price":9.5,"half":7.5},
+      {"name":"Ensaladilla rusa de pulpo a la gallega","price":10.5,"half":8.5},
+      {"name":"Básica","description":"Tomate del huerto, aceite de oliva virgen extra y sal gruesa","price":8.5},
+      {"name":"Caballa","description":"Tomate del huerto, caballa, aceite de oliva virgen extra y sal gruesa","price":10.5},
+      {"name":"La Despensa","description":"Cogollos con revuelto de ahumados, queso curado, frutos rojos y mix de pipas","price":12.5},
+      {"name":"Ibérica","description":"Cogollos con jamón ibérico, crema de queso, pasas y salsa vinagreta","price":12.5},
+      {"name":"Salmón","description":"Cogollos, salmón, queso de cabra, pasas, tomate seco, eneldo y vinagre de Módena","price":12.5}
+    ]},
+    {"name":"Delicatessen","photo":"carta-3.jpg","items":[
+      {"name":"Lomo de atún en manteca ibérica","price":9.5},
+      {"name":"Mojama de atún extra de Barbate","price":13.5},
+      {"name":"Lomo de atún ahumado con tomate fresco","price":14.5},
+      {"name":"Paté del nuestro","price":14.5,"half":8.5},
+      {"name":"Croquetas de cocido","price":13.5,"half":7.5},
+      {"name":"Croquetas de rabo de toro","price":14.5,"half":8.5},
+      {"name":"Flamenquín La Despensa","price":22.5},
+      {"name":"Espárragos en aceite de oliva virgen extra con queso de cabra y pimiento caramelizado","price":12.5},
+      {"name":"Huevos rotos con jamón ibérico","price":13.5},
+      {"name":"Revuelto de morcilla de Burgos (arroz) con langostinos","price":14.5},
+      {"name":"Anchoas del Cantábrico calibre 00","price":3,"unit":"unidad"}
+    ]},
+    {"name":"Pescados","photo":"carta-3.jpg","items":[
+      {"name":"Merluza La Despensa","description":"Salsa con langostinos y almejas","price":18.5},
+      {"name":"Salmón con salsa de eneldo","price":19.5},
+      {"name":"Bacalao a la riojana","price":17.5}
+    ]},
+    {"name":"Cerdo ibérico Los Pedroches (Córdoba)","photo":"carta-4.jpg","items":[
+      {"name":"Presa ibérica","price":19.5},
+      {"name":"Secreto ibérico","price":19.5},
+      {"name":"Pluma ibérica","price":19.5},
+      {"name":"Solomillo ibérico","price":17.5},
+      {"name":"Surtido de carnes ibéricas","price":32.5}
+    ]},
+    {"name":"Ternera del norte","photo":"carta-4.jpg","items":[
+      {"name":"Chuletón","price":26.5},
+      {"name":"Entrecot","price":24.5},
+      {"name":"Solomillo","price":27.5}
+    ]},
+    {"name":"Brochetones y pinchitos","photo":"carta-4.jpg","items":[
+      {"name":"Brochetón de pollo con verduras","price":17.5},
+      {"name":"Brochetón de solomillo de cerdo ibérico","price":19.5},
+      {"name":"Brochetón mixto","description":"Ternera, pollo y cerdo ibérico","price":20.5},
+      {"name":"Pinchitos de pluma ibérica","description":"2 unidades","price":16.5},
+      {"name":"Pinchitos de pollo del corral","description":"2 unidades","price":14.5},
+      {"name":"Pechuga de pollo","price":12.5}
+    ]},
+    {"name":"Alpargatas","photo":"carta.jpg","description":"Con aceite de oliva y tomate triturado","items":[
+      {"name":"Salmón con guacamole","price":11.5},
+      {"name":"Jamón ibérico","price":9.5},
+      {"name":"Jamón ibérico y huevo de codorniz","price":10.5},
+      {"name":"Tostón de La Despensa","price":13.5},
+      {"name":"Láminas de secreto con paté, crema de queso y cebolla caramelizada","price":11.5}
+    ]},
+    {"name":"Especial niños","photo":"carta.jpg","items":[
+      {"name":"Escalope de pollo","price":9.5},
+      {"name":"Patatas fritas con huevo","price":7.5},
+      {"name":"Croquetas de cocido","price":8.5}
+    ]},
+    {"name":"Postres","photo":"carta.jpg","items":[
+      {"name":"Tarta de queso","price":6.5},
+      {"name":"Tarta de tres chocolates","price":6.5},
+      {"name":"Brownie con helado de vainilla","price":7},
+      {"name":"Coulant de chocolate con helado de vainilla","price":5.5},
+      {"name":"Tarta de zanahoria","price":6.5},
+      {"name":"Bola de helado de vainilla o chocolate","price":2.5,"unit":"unidad"}
+    ]}
+  ],
+  "extras":[
+    {"name":"Pan por persona","price":1.8},
+    {"name":"Pan sin gluten","price":2.1},
+    {"name":"Bolsa extra de piquitos","price":1.2},
+    {"name":"Suplemento salsas caseras","description":"Chimichurri, pimienta, champiñones, roquefort, ali oli","price":2.5},
+    {"name":"Extra patatas fritas caseras","price":5.5},
+    {"name":"Extra de verduras","price":4.5}
+  ],
+  "grillNote":"Con guarnición a elegir: patatas fritas o verduras."
+}
