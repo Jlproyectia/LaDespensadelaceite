@@ -1,8 +1,8 @@
 place — restaurante La Despensa del Aceite, Fuengirola.
-Sistema: papel crema #F7F3EC, oliva #455038, Literata/Figtree; hero place, nav-split, footer-columns, close-word, space, solid, wordmark. Oferta strip, lugar trio, cierre name. Adaptación: fotos regeneradas por petición expresa; reseñas y carta multipágina por petición expresa. Movimiento ampliado por petición expresa posterior: entradas, transiciones, imágenes y microinteracciones; reducción de movimiento respetada.
+Rediseño solicitado: adaptar la web y toda la fotografía a la identidad real del local. Papel cálido, oliva de la fachada, Cormorant Garamond/DM Sans, portada fotográfica, composiciones asimétricas, cierre de reserva compacto. Se sustituye el diseño de pantallas rígidas anterior por secciones según contenido.
 
-Inicio: hero fachada 1 pantalla; visita terraza 1 pantalla; especialidades tres fotografías 1 pantalla; reseñas y acceso a todas en Google 1 pantalla; cierre y directorio 1 pantalla. Móvil: secciones crecen según contenido para evitar texto cortado.
-Carta: página específica, categorías y buscador, 10 grupos de platos y extras. Contenido HTML visible sin JS. Precios transcritos de imágenes públicas, fecha y aviso de vigencia. Precio dudoso no publicado.
-Opiniones: selección de extractos atribuidos con enlace al listado de Google; valoración 4,6 y 1540 opiniones comprobadas en ficha el 05/11/2026. Sin API ni falsa sincronización.
-Reservas: llamada telefónica real; ningún formulario ficticio. Cómo llegar: ficha Maps exacta, nunca ubicación inventada.
-Imágenes: cinco recreaciones IA con referencias originales; originales en research, outputs optimizados en dist/images; crédito visible explica recreación. No se presentan como fotografías originales.
+Fotografía final: 11 composiciones diferentes para 11 categorías, más 4 imágenes del local. Mesa y vajilla inspiradas en referencias originales: salvamanteles oscuros, platos de barro y blancos con motivos verdes, carpintería verde/madera. Varias preparaciones de cada categoría donde conviene. Se descartan macros de patatas/carne y fondos beige de catálogo. Las imágenes de carta se muestran enteras 3:2.
+
+Carta: 57 platos y 6 extras originales, búsqueda, navegación por categorías, impresión. Inicio: comida, especialidades, terraza, galería, reseñas discretas y visita. Opiniones: extractos con acceso a Google, sin sincronización ficticia. Información: fuentes y carácter ilustrativo de las imágenes.
+
+Movimiento: entradas escalonadas, hover, desplazamiento fotográfico suave y transición entre páginas; opción de pausa y prefers-reduced-motion. Contenido visible sin JS. Prioridad a las peticiones expresas del usuario frente a las restricciones visuales de la skill original.

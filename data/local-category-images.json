@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "local-ibericos",
+    "reference": "research/ref-6.jpg + research/local-exterior.jpg + research/ref-2.jpg",
+    "prompt": "Create ONE high-end editorial restaurant food photograph that genuinely looks taken inside this ACTUAL modest Andalusian tavern La Despensa del Aceite, using the three references faithfully. Image1 shows actual ham presentation, honey wood chairs and wall; image2 shows ACTUAL restaurant outside green paint and wood, only atmosphere reference; image3 shows ACTUAL dark tabletop, glassware, white plate brown rim and little terracotta sauce dish. Compose a generous shared Iberian selection on an actual dark restaurant tabletop with dark woven placemats: large round glazed terracotta plate of thin marbled jamon as in image1, alongside a separate small ivory ceramic plate brown rim with a fan of cured sheep cheese wedges and some slices of caña de lomo. Full main plates visible, not cropped, no overly staged symmetry. Crusty bread on a small terracotta side dish, two discreet partially filled wine glasses behind. Eye-level-ish seated guest view at45degrees, food crisp detailed and appetizing, natural irregular slices, beautiful soft lateral window light, true neutral whites and warm natural meat. A narrow soft background suggests actual dark wooden chairs, honey wood paneling and muted green frame, NOT a new room. Horizontal3:2, food occupies central75%, camera pulled back enough for table context, polished editorial photography but honest local restaurant atmosphere, not a luxury hotel or studio catalog. Absolutely no beige seamless background, no pale stone tabletop, no shiny perfect plastic food, no oversaturated orange lighting, no people, no cartoon stickers, no watermark, no text overlay.",
+    "source": "source-images/local-ibericos.png",
+    "image": "images/local-ibericos.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-ensaladas",
+    "reference": "research\\ref-5.jpg",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 is real tomato/mackerel salad. Foreground complete white ceramic brown-rim plate with thick ripe tomato wedges and two mackerel fillets, olive oil sheen. Behind left a separate smaller plate of cogollos lettuce hearts with smoked salmon, goat cheese, raisins and sun-dried tomato from actual menu. Fresh colorful category selection, not overflowing, two clear distinct dishes.",
+    "source": "source-images/local-ensaladas.png",
+    "image": "images/local-ensaladas.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-delicatessen",
+    "reference": "research\\ref-7.jpg",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 is real asparagus with goat cheese and caramelized red pepper on terracotta platter. Foreground entire oval terracotta platter with those green asparagus, lightly golden cheese and pepper, matching real dish. Behind right a separate small brown-rim white plate with four golden rustic croquettes. Elegant relaxed spread of delicatessen, no decorative garnish or invented sauces.",
+    "source": "source-images/local-delicatessen.png",
+    "image": "images/local-delicatessen.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-pescados",
+    "reference": "web\\source-images\\cat-pescados.png",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 provides salmon with dill sauce subject. A complete ivory ceramic brown-rim plate with grilled salmon fillet and creamy dill sauce, modest homemade fries. Behind left a separate smaller plate with a piece of cod in red Rioja-style tomato and pepper sauce. These are actual menu dishes reconstructed illustratively. Two complete plates separated on actual dark placemats, discreet glass of white wine.",
+    "source": "source-images/local-pescados.png",
+    "image": "images/local-pescados.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-cerdo",
+    "reference": "web\\source-images\\cat-cerdo.png",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 provides subject selection: grilled presa, secreto and pluma Iberian pork. Entire terracotta oval platter with three groups of different browned Iberian pork cuts, natural irregular grill sear and succulent interior. Separate small bowl of homemade fries and small terracotta sauce dish behind, two understated wine glasses. Same actual restaurant atmosphere of reference1. No chicken or chorizo.",
+    "source": "source-images/local-cerdo.png",
+    "image": "images/local-cerdo.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-ternera",
+    "reference": "research\\ref-2.jpg",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 is real entrecote on ivory plate. Create two distinct menu preparations on actual restaurant table: entire foreground white brown-rim plate with grilled entrecote, homemade fries and modest vegetables as reference2; behind right a separate small complete plate with two beef solomillo medallions and grilled vegetables. Honest generous portions, not luxury tasting dishes, natural grill sear. Keep full plates in frame, understated red wine glass behind. Slightly higher angle than reference1, no extra props.",
+    "source": "source-images/local-ternera.png",
+    "image": "images/local-ternera.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-brochetones",
+    "reference": "research\\ref-3.jpg",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 is real marinated chicken skewers. Create a large entire ivory crackled ceramic oval platter with two marinated chicken pinchitos matching reference and one larger brocheton with Iberian pork, onion and red pepper, side of homemade fries. Two distinct skewer types, orderly but natural arrangement. Actual dark tabletop/placemat and wood/green background, small terracotta sauce dish. All skewers and entire plate visible, no excessive oil.",
+    "source": "source-images/local-brochetones.png",
+    "image": "images/local-brochetones.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-alpargatas",
+    "reference": "web\\source-images\\cat-alpargatas.png",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 provides actual-menu reconstructed alpargata subjects. Create two rustic long toasts on separate complete small ivory plates: one with crushed tomato, guacamole and folded smoked salmon; other with crushed tomato, Iberian jamon and two tiny fried quail eggs. Side by side diagonally on dark woven placemats, same modest restaurant context reference1, attractive bread crust. Keep both plates complete, no beige studio surface, no added microgreens or decorative dots.",
+    "source": "source-images/local-alpargatas.png",
+    "image": "images/local-alpargatas.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-infantil",
+    "reference": "web\\source-images\\cat-infantil.png",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 provides actual menu children's dishes. Two small complete ivory ceramic plates arranged naturally on actual dark restaurant table: foreground three golden croquettes with homemade fries; behind a golden breaded chicken escalope with small fries. ONLY simple short glasses of WATER, absolutely NO wine glasses, NO alcohol. Keep actual wooden chairs and green frame softly blurred. Food fresh and appetizing, modest child portions, fully visible plates, no cartoon props or toys.",
+    "source": "source-images/local-infantil.png",
+    "image": "images/local-infantil.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-postres",
+    "reference": "web\\source-images\\cat-postres.png",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 provides actual-menu dessert subjects. Create a relaxed dessert spread at this actual restaurant: foreground small entire ivory brown-rim plate with a creamy baked cheesecake slice; behind right brownie with one scoop vanilla ice cream on separate plate; behind left a slim slice of three-chocolate cake on another small plate. All plates full and distinct, no berries or fancy garnish. Simple water glass and tiny plain coffee cup in background, no wine. Natural appetizing textures, soft side daylight, retain dark table and wood/green environment, no studio.",
+    "source": "source-images/local-postres.png",
+    "image": "images/local-postres.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  },
+  {
+    "slug": "local-acompanamientos",
+    "reference": "web\\source-images\\cat-acompanamientos.png",
+    "prompt": "Produce ONE new professional food photograph in this ACTUAL modest Andalusian tavern, closely matching reference1's environment: dark tabletop and black woven placemats, dark wooden chairs, honey wood paneling, subtle green window frame in blurred background, discreet simple glassware, soft natural side daylight. Subject crisp and appetizing, irregular realistic food texture, natural warm tones with neutral whites. Honest local restaurant, not luxury, not a studio. Horizontal3:2, seated guest view45degrees with entire main plates visible and generous breathing room. Keep food in central75% for optional16:9 crop. No beige studio background, no orange cast, no labels, no cartoon, no people, no plastic food. Reference2 provides bread basket, oil, fries and piquitos. Create a lovely real restaurant table scene with wicker bread basket of crusty rustic bread prominently at back-left, small white shallow olive oil saucer foreground, modest bowl homemade fries back-right and little bowl of bread piquitos beside. Entire dishes and basket visible with separation on actual dark tabletop/black placemats. Olive oil golden-green, crisp bread textures. Simple water glass only, no wine. Actual wood chair and green window softly in background, not a beige studio. All objects central with breathing room.",
+    "source": "source-images/local-acompanamientos.png",
+    "image": "images/local-acompanamientos.webp",
+    "note": "Recreación IA basada en referencias del local y selecciones de preparaciones de su carta; no fotografía original."
+  }
+]

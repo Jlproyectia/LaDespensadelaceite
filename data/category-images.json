@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "cat-ibericos",
+    "reference": "web\\source-images\\ibericos.png",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference is subject, preserve thin Iberian ham and cured sheep cheese on ivory rustic ceramic with terracotta rim. Improve into beautifully balanced complete platter, two orderly fans of cheese and delicately folded overlapping ham slices. Bread and olive oil only softly in far background.",
+    "source": "source-images/cat-ibericos.png",
+    "image": "images/cat-ibericos.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-ensaladas",
+    "reference": "research\\ref-5.jpg",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference is actual tomato and mackerel salad. Preserve thick ripe red tomato wedges and two mackerel fillets, light olive oil dressing. Arrange neatly on complete ivory ceramic plate, fresh moist tomato without excessive shine, naturally appetizing.",
+    "source": "source-images/cat-ensaladas.png",
+    "image": "images/cat-ensaladas.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-delicatessen",
+    "reference": "research\\ref-7.jpg",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference is actual green asparagus with melted goat cheese and caramelized red pepper. Recreate full generous terracotta oval platter with neatly arranged green spears, creamy lightly gratinated cheese and restrained pepper strips. Fresh green color, not oily.",
+    "source": "source-images/cat-delicatessen.png",
+    "image": "images/cat-delicatessen.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-pescados",
+    "reference": "web\\source-images\\entrecot.png",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference is ONLY restaurant crockery/photography context, NOT food. Generate menu-based illustrative reconstruction of salmón con salsa de eneldo: one beautiful cooked salmon fillet, delicate creamy dill sauce placed beside and beneath, modest side of roasted potatoes. Full ivory ceramic plate with brown rim. Keep everyday Spanish restaurant generous portion, refined clean arrangement.",
+    "source": "source-images/cat-pescados.png",
+    "image": "images/cat-pescados.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-cerdo",
+    "reference": "research\\ref-1.jpg",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference provides restaurant's rustic terracotta platter and actual Iberian pork cuts. Create an elegant category selection of THREE distinct grilled Iberian pork cuts: slices of presa, secreto and pluma neatly arranged in three groups on one complete generous oval terracotta platter, each with natural browned sear, all fully cooked succulent. Small separate bowl of fries in background. NO chicken, no chorizo. Category selection based on real menu, not a claim of exact serving.",
+    "source": "source-images/cat-cerdo.png",
+    "image": "images/cat-cerdo.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-ternera",
+    "reference": "research\\ref-2.jpg",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference is actual entrecote on ivory brown rim plate. Create clean category composition of TWO distinct whole dishes side by side: foreground entire plate with grilled entrecote and modest homemade fries, behind to right a smaller entire plate with two thick beef tenderloin medallions and grilled vegetables. Do not overlap food or crop plates. Generous natural beef portions, neutral light, dry attractive browned sear without excessive oil. Menu-based selection of beef dishes.",
+    "source": "source-images/cat-ternera.png",
+    "image": "images/cat-ternera.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-brochetones",
+    "reference": "research\\ref-3.jpg",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference is actual orange marinated chicken skewers on ivory rustic ceramic. Create a complete large platter with TWO types of skewers spaced neatly: two chicken pinchitos matching reference and one larger brocheton of grilled pork pieces with red pepper and onion. Small portion homemade fries at side. Full plate, clean composition, natural appetizing grilled color, menu-based selection.",
+    "source": "source-images/cat-brochetones.png",
+    "image": "images/cat-brochetones.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-alpargatas",
+    "reference": "web\\source-images\\cat-ibericos.png",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference provides ONLY ceramic tableware style and neutral lighting, NOT dish. Create menu-based editorial category selection of TWO Spanish alpargata toasts on one full ivory brown-rim platter: one long rustic toasted bread slice with crushed tomato, guacamole and delicately folded smoked salmon; the other with crushed tomato, Iberian ham and two tiny fried quail eggs. Bread visibly toasted and generous, both toasts fully seen, arranged side by side with clean gap. No added microgreens, no fancy dots.",
+    "source": "source-images/cat-alpargatas.png",
+    "image": "images/cat-alpargatas.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-infantil",
+    "reference": "web\\source-images\\croquetas.png",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference is actual rustic croquettes. Create menu-based category composition of TWO modest children's dishes: one full small ivory ceramic plate with three golden croquettes and homemade fries, another full small ivory plate with a golden breaded chicken escalope and small portion of fries. Plates arranged diagonally with breathing space, no cartoon props, no toys, no ketchup art. Neutral daylight, crisp appetizing crust, genuine relaxed Spanish restaurant.",
+    "source": "source-images/cat-infantil.png",
+    "image": "images/cat-infantil.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-postres",
+    "reference": "web\\source-images\\cat-ibericos.png",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference provides ONLY neutral lighting, ceramic styling and tabletop, not food. Create menu-based category selection of desserts: one slice creamy baked cheesecake with golden top on a small ivory plate in foreground, one square brownie with a single scoop of vanilla ice cream on a separate small ivory plate behind right, and a slim slice of three-chocolate layered cake on third small plate behind left. All three plates entirely visible and clearly separated in elegant triangular arrangement, modest natural portions, no berries or ingredients not listed, no decorative drizzles.",
+    "source": "source-images/cat-postres.png",
+    "image": "images/cat-postres.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  },
+  {
+    "slug": "cat-acompanamientos",
+    "reference": "web\\source-images\\aceite-pan.png",
+    "prompt": "Premium editorial food photography for an excellent Spanish restaurant website. Landscape 3:2. Pull camera back: entire ceramic plate fully visible with generous 18% breathing room all around; all food within central75% so16:9 crop keeps dish. Elevated 45-degree view, neutral soft daylight, creamy whites true to life, subtle soft shadows, restrained warm beige tabletop. No orange color cast, no dramatic yellow sunlight, no grease shine, no macro, no blur on food, no text, no overlays, no people. Food looks freshly prepared and delicious, rustic but carefully arranged. Reference provides rustic bread basket and olive oil saucer. Create a beautiful complete still life of accompaniments: wicker basket with fresh crusty bread, shallow ivory olive oil saucer, small ivory bowl of homemade golden fries, and a little bowl of bread piquitos. Each object completely visible with ample separation, elegant restrained composition across central75% of frame. Neutral daylight and pale beige table instead of dark orange wood. No macro, no excessive grease, fresh crisp textures.",
+    "source": "source-images/cat-acompanamientos.png",
+    "image": "images/cat-acompanamientos.webp",
+    "note": "Recreación IA; selecciones e interpretaciones de platos de carta, no fotografías originales."
+  }
+]

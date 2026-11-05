@@ -6,3 +6,7 @@ const home=fs.readFileSync(path.join(dir,'index.html'),'utf8');assert.equal((hom
 console.log(`PASS: ${pages.length} pages, ${links} local links/assets, ${images} images, 63 menu rows, review links, structured data and reduced-motion support.`);
 
 
+
+assert.equal((carta.match(/class="category-photo"/g)||[]).length,11,'Every menu category has its own image');
+const categoryFiles=[...carta.matchAll(/class="category-photo"><img[^>]+src="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(categoryFiles).size,11,'Category photos are unique');
+const allHtml=pages.map(f=>fs.readFileSync(path.join(dir,f),'utf8')).join('');const uniqueImages=new Set([...allHtml.matchAll(/<img[^>]+src="images\/([^"]+)"/g)].map(m=>m[1]));assert.ok(uniqueImages.size>=15&&uniqueImages.size<=20,'15–20 unique photos across the website');console.log('PASS: '+uniqueImages.size+' unique photos, 11 distinct category images.');

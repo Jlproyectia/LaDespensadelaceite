@@ -1,18 +1,28 @@
-# Entrega y comprobaciones
+# La Despensa del Aceite — web
 
-Web estática en español, cuatro páginas: inicio, carta, opiniones e información. Ejecutar `npm run build`, `npm run check` y `npm start` dentro de web. El resultado desplegable está en dist.
+Sitio estático de cuatro páginas, en español. `npm run build` genera dist; `npm run check` valida enlaces, datos e imágenes; `npm start` abre el servidor local en el puerto 4173.
 
-## Contenido
-57 platos y 6 extras transcritos de fotografías públicas de la carta. Los precios requieren confirmación del restaurante; un precio ilegible figura como Consultar. Horarios, teléfono y ubicación contrastados con Google Maps el 05/11/2026. Las reseñas son tres extractos atribuidos a Google en directorios públicos, con acceso al listado de Google; no existe sincronización automática. Fuentes y limitaciones están visibles en informacion.html.
+## Edición
+- `redesign.mjs`: estructura y textos de las páginas.
+- `src/site.css`: diseño responsive, tipografías y movimiento.
+- `src/site.js`: navegación, buscador, galería, horarios y preferencias de movimiento.
+- `data/menu.json`: 57 platos y 6 extras. Los precios provienen de fotografías públicas y necesitan confirmación del restaurante. El precio ilegible se muestra como Consultar.
+- `src/information.html`: fuentes, créditos y privacidad.
+- `data/images-v2.json` y manifiesto de categorías: referencias y prompts de imágenes. Los originales se conservan en source-images, fuera de la publicación; los WebP en dist/images son los archivos usados por la web.
 
-Cinco imágenes recreadas con IA a partir de fotografías del negocio: fachada, terraza, ibéricos, croquetas y carnes. Se preservaron los platos de barro, alimentos, mobiliario y colores del local, mejorando iluminación, encuadre y detalle. Se muestran como recreaciones, no como fotografías originales. WebP en dos resoluciones. No hay imágenes pendientes ni contenido vacío.
+## Dirección visual
+Portada gastronómica, Cormorant Garamond y DM Sans, papel cálido y oliva, composición asimétrica, fotografías ampliables, reseñas compactas y contacto legible. Las categorías de la carta tienen fotografías diferentes, con encuadres amplios. Se mantienen los datos del restaurante y enlaces a Google. La selección de reseñas no se sincroniza automáticamente.
 
-## Diseño y validación
-Paleta crema y oliva, Literata y Figtree, hero fotográfico place, navegación split, cierre tipográfico y columnas. Entradas finitas, hover de fotos y tarjetas, transiciones entre páginas, menú móvil y control de movimiento reducido.
+Las imágenes se recrean con IA a partir de referencias fotográficas y descripciones de la carta. Las categorías sin foto directa son interpretaciones ilustrativas; no se garantiza la presentación real. Esta información figura también en el sitio.
 
-- Comprobación propia: PASS, 4 páginas, 95 enlaces/recursos locales, 63 filas de carta, atributos accesibles, datos estructurados.
-- Chrome: revisados anchos 1440, 1024, 820, 768 y 390. Capturas del inicio y carta móvil. Sin texto cortado, recursos rotos ni desbordamientos en comprobación de consistencia.
-- Rendimiento: 0 FAIL, 5 WARN. Transferencia completa 1,79 MiB escritorio y 533 KiB móvil, 0 saltos de layout. Advertencias por peso de fotografía de portada y CPU del entorno. Una muestra local por tamaño; no es una medición de usuarios reales.
-- Los controles de la skill no pasan íntegramente. Excepciones intencionadas: español no reconocido por su heurística de textos; contacto real solicitado por el usuario; fotografías IA y animaciones por petición expresa; secciones móviles crecen según contenido; reseñas sin fotografía; bloques de texto alineados a columnas interiores. El stress test altera el título y avisa de una tercera línea, aunque el título real cabe en dos. Los controles de cuadrícula confunden columnas interiores con bordes exteriores. Se corrigieron el pie de página y la selección de resolución de imágenes en tableta.
+## Comportamiento
+Entradas escalonadas, transición entre páginas, desplazamiento fotográfico suave y efectos de interacción. Se respetan las preferencias de movimiento reducido y existe un botón para pausar las animaciones. El contenido permanece visible sin JavaScript.
 
-Las capturas y resultados detallados están en shots y qa-report, excluidos de publicación. No se han probado reservas telefónicas reales ni la vigencia comercial de los precios.
+La carta admite búsqueda sin distinguir tildes, estado sin resultados, borrado y navegación por categorías. Imprimir restaura antes la carta completa. Las fotografías se abren en un diálogo accesible y devuelven el foco al cerrar.
+
+## Comprobaciones
+Búsqueda de croquetas: 3 resultados. Consulta inexistente: aviso específico. Borrar: 63 elementos restaurados. Galería: apertura/cierre comprobados. Navegación móvil: abre, navega y cierra. Control de animaciones: activa/desactiva. Sin desbordamiento horizontal en la comprobación móvil. Capturas y mediciones locales se conservan en shots y qa-report, excluidos de publicación.
+
+Datos contrastados el 05/11/2026. Horarios sujetos a festivos. Las reservas enlazan al teléfono real; no hay formulario ficticio ni analítica.
+
+Validación final: 15 fotografías únicas, 11 fotos distintas de categoría, 104 enlaces y recursos locales comprobados, 63 filas de carta. Capturas finales en shots/final-home-1440.png y shots/final-carta-390.png. Referencias fotográficas finales en data/local-category-images.json.

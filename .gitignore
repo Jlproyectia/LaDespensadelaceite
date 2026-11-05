@@ -9,3 +9,4 @@ research/
 .browser-*/
 qa-report/
 *.tar.gz
+*.backup
