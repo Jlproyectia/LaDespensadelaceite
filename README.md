@@ -1,5 +1,11 @@
 # La Despensa del Aceite — web
 
+## Idiomas
+
+El selector superior SN / EN abre la misma página en español o inglés. Las seis páginas tienen versiones estáticas en ambos idiomas, disponibles incluso sin JavaScript. Las versiones inglesas usan el sufijo `.en.html` y mantienen el idioma en la navegación.
+
+`build-languages.mjs` genera las versiones inglesas con `data/ui-en.json` y `data/attributes-en.json`. `data/reviews-es.txt` contiene los 143 extractos traducidos al español, en el mismo orden que los textos conservados en `data/google-five-star.tsv`. `src/i18n.js` traduce los mensajes dinámicos y define el idioma del calendario. La compilación detecta textos sin traducción; `npm run check` comprueba las doce páginas, los enlaces de idioma y las reseñas.
+
 Sitio estático de cuatro páginas, en español. `npm run build` genera dist; `npm run check` valida enlaces, datos e imágenes; `npm start` abre el servidor local en el puerto 4173.
 
 ## Edición
