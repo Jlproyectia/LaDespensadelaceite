@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {arrowIcon} from './src/icons.js';
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const translations = {...readJson('data/ui-en.json'), ...readJson('data/attributes-en.json')};
@@ -8,7 +9,7 @@ const menu = readJson('data/menu.json');
 for (const item of [...menu.sections.flatMap(section => section.items), ...menu.extras]) {
   translations[item.name + ' ' + (item.description || '')] = translations[item.name] + (item.description ? ' ' + translations[item.description] : '');
 }
-const ignored = new Set(['SN', 'EN', 'place', 'other', 'website', 'es_ES']);
+const ignored = new Set(['ES', 'EN', 'place', 'other', 'website', 'es_ES']);
 function translate(value) {
   const text = value.trim();
   if (text === '4,6') return '4.6';
@@ -57,12 +58,18 @@ export function buildLanguages() {
       return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
     });
     for (const [language, html] of [['es', spanish], ['en', english]]) {
-      const selector = `<div class="language-switch" role="group" aria-label="${language === 'es' ? 'Idioma' : 'Language'}"><a href="${page}.html" lang="es" hreflang="es" aria-label="Español"${language === 'es' ? ' aria-current="true"' : ''}>SN</a><span aria-hidden="true">/</span><a href="${page}.en.html" lang="en" hreflang="en" aria-label="English"${language === 'en' ? ' aria-current="true"' : ''}>EN</a></div>`;
-      const output = html.replace('<button class="nav-toggle"', selector + '<button class="nav-toggle"');
+      const selector = `<div class="language-switch" role="group" aria-label="${language === 'es' ? 'Idioma' : 'Language'}"><a href="${page}.html" lang="es" hreflang="es" aria-label="Español"${language === 'es' ? ' aria-current="true"' : ''}>ES</a><span aria-hidden="true">/</span><a href="${page}.en.html" lang="en" hreflang="en" aria-label="English"${language === 'en' ? ' aria-current="true"' : ''}>EN</a></div>`;
+      let output = html.replace('<button class="nav-toggle"', selector + '<button class="nav-toggle"');
+      const toggle = output.match(/<button class="nav-toggle"[^>]*>[\s\S]*?<\/button>/)[0];
+      output = output.replace(toggle, '').replace('<div class="nav-inner">', '<div class="nav-inner">' + toggle)
+        .replace('</header>', '</header><div class="nav-backdrop" aria-hidden="true"></div>');
+      const directions = {'↗':'external', '←':'left', '→':'right', '↓':'down', '↑':'up'};
+      output = output.split(/(<script\b[^>]*>[\s\S]*?<\/script>|<[^>]+>)/g).map(part => part.startsWith('<') ? part : part.replace(/[↗←→↓↑]/g, arrow => arrowIcon(directions[arrow]))).join('');
       fs.writeFileSync(`dist/${page}${language === 'en' ? '.en' : ''}.html`, output);
     }
   }
   fs.copyFileSync('src/i18n.js', 'dist/i18n.js');
+  fs.copyFileSync('src/icons.js', 'dist/icons.js');
   fs.copyFileSync('src/kitchen-scroll.js', 'dist/kitchen-scroll.js');
   fs.appendFileSync('dist/site.css', fs.readFileSync('src/languages.css', 'utf8'));
 }

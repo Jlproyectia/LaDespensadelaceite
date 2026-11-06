@@ -15,6 +15,11 @@ for(const page of ['index','opiniones']){
 for(const file of pages){
   const html=fs.readFileSync(path.join(dir,file),'utf8');
   const base=file.replace('.en.html','.html');
+  assert.match(html,/>ES<\/a>/,'Language selector uses ES');
+  assert.doesNotMatch(html,/>SN<\/a>/);
+  assert.doesNotMatch(html,/<p class="source-note">(?:Extractos traducidos|Valoración global:|Selección de reseñas de cinco estrellas consultadas)/);
+  const visibleText=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,'').replace(/<[^>]+>/g,'');
+  assert.doesNotMatch(visibleText,/[↗←→↓↑]/,'Arrows render as SVG icons');
   assert.ok(html.includes(`href="${base}" lang="es" hreflang="es"`),'Spanish switch keeps the current page');
   assert.ok(html.includes(`href="${base.replace('.html','.en.html')}" lang="en" hreflang="en"`),'English switch keeps the current page');
   if(file.endsWith('.en.html')){

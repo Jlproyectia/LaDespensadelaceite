@@ -10,8 +10,10 @@ if('IntersectionObserver'in window){const observer=new IntersectionObserver(entr
 const header=document.querySelector('.site-header');let scheduled=false;
 function headerState(){header?.classList.toggle('is-scrolled',scrollY>40);scheduled=false}headerState();addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(headerState)}},{passive:true});
 const toggle=document.querySelector('.nav-toggle'),nav=document.querySelector('#main-nav');
-function closeNav(focus=false){nav.classList.remove('is-open');document.body.classList.remove('nav-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label',t('Abrir menú'));if(focus)toggle.focus()}
-toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?t('Cerrar menú'):t('Abrir menú'));nav.classList.toggle('is-open',open);document.body.classList.toggle('nav-open',open);if(open)nav.querySelector('a').focus()});
+const menuBackground=[...document.querySelectorAll('main,.site-footer,.mobile-bar')];
+function closeNav(focus=false){menuBackground.forEach(el=>el.inert=false);nav.classList.remove('is-open');document.body.classList.remove('nav-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label',t('Abrir menú'));if(focus)toggle.focus()}
+toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?t('Cerrar menú'):t('Abrir menú'));nav.classList.toggle('is-open',open);document.body.classList.toggle('nav-open',open);menuBackground.forEach(el=>el.inert=open);if(open)nav.querySelector('a').focus()});
+document.querySelector('.nav-backdrop')?.addEventListener('click',()=>closeNav(true));
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>closeNav()));
 addEventListener('keydown',e=>{if(toggle?.getAttribute('aria-expanded')!=='true')return;if(e.key==='Escape'){closeNav(true)}if(e.key==='Tab'){const items=[...header.querySelectorAll('a,button')].filter(el=>el.getClientRects().length);const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
 matchMedia('(min-width:801px)').addEventListener('change',e=>{if(e.matches)closeNav()});
