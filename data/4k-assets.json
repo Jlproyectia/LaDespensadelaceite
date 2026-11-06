@@ -1,0 +1,224 @@
+[
+  {
+    "name": "editorial-ibericos",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-cerdo",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-delicatessen",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-queso",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-lomo",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-ensaladas",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-ensaladilla",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-pate",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-mojama",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-atun",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-flamenquin",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-huevos",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-revuelto",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-anchoas",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-pescados",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-merluza",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-bacalao",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-solomillo",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-presa",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-ternera",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-chuleton",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-brochetones",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-alpargatas",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-toston",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-infantil",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-postres",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-tres-chocolates",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-brownie",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-coulant",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-zanahoria",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "dish-helado",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-acompanamientos",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "editorial-fachada",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "terraza",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "rincon-terraza",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "entrada-local",
+    "sourceWidth": 1536,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  },
+  {
+    "name": "hero-despensa",
+    "sourceWidth": 1672,
+    "outputWidth": 3840,
+    "method": "Lanczos resampling, not native 4K generation"
+  }
+]

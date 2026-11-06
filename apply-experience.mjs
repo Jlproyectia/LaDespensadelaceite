@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+let s=fs.readFileSync('redesign.mjs','utf8');
+s="import {experience} from './experience.mjs';\n"+s;
+const begin=s.indexOf('const reviewCards='),end=s.indexOf('const nav=',begin);s=s.slice(0,begin)+'const reviewCards=()=>xp.reviewCards();\n'+s.slice(end);
+s=s.replace("['galeria.html','La galería'],['opiniones.html','Opiniones']","['celebraciones.html','Celebraciones'],['galeria.html','La galería']");
+s=s.replace("+footer()+`<script", "+footer()+xp.booking+`<script");
+s=s.replace('site.js?v=4','site.js?v=5');
+const pos=s.indexOf('const galleryItems=');s=s.slice(0,pos)+"const xp=experience({menu,ids,photo,frame,esc,money,link,button,maps,reviews,ext,arrow});\n"+s.slice(pos);
+s=s.replace('galleryItems.map(([im,title],i)', 'galleryItems.slice(0,12).map(([im,title],i)');
+const atmosphereStart=s.indexOf('<section class="atmosphere">'),atmosphereEnd=s.indexOf('<section class="reviews-section">',atmosphereStart);s=s.slice(0,atmosphereStart)+'${xp.moments()}\n'+s.slice(atmosphereEnd);
+const visitStart=s.indexOf('<section class="visit-section'),visitEnd=s.indexOf('</section>`);',visitStart)+10;
+const visit=s.slice(visitStart,visitEnd);
+s=s.slice(0,visitStart)+'${xp.celebrationTeaser()}\n'+s.slice(visitStart);
+const cardStart=s.indexOf('<div class="category-cards">'),cardEnd=s.indexOf('<div class="full-menu-heading">',cardStart);s=s.slice(0,cardStart)+'${xp.dishCards()}'+s.slice(cardEnd);
+// Reuse the full reservation section on the two destination pages.
+s=s.replace("const oldInfo=", "page('celebraciones.html','Encuentros · La Despensa del Aceite','Consulta comidas en grupo y encuentros en La Despensa.','Celebraciones',xp.celebrations()+`"+visit+"`);\nconst oldInfo=");
+s=s.replace('Extractos de opiniones · Valoración consultada el 5 de noviembre de 2026.','Valoración global: 4,6 sobre 1.540 reseñas. Carrusel: selección de cinco estrellas.');
+s=s.replace(/Extractos atribuidos a Google en[\s\S]*?Cada tarjeta abre el listado completo de Google\./,'Selección de reseñas de cinco estrellas consultadas directamente en Google Maps el 06/11/2026. Cada tarjeta abre el listado completo de Google.');
+fs.writeFileSync('redesign.mjs',s);
+let b=fs.readFileSync('build.mjs','utf8').replace('site.css?v=4','site.css?v=5').replace("'galeria.html','opiniones.html'","'galeria.html','celebraciones.html','opiniones.html'").replace('Built five pages','Built six pages');fs.writeFileSync('build.mjs',b);
+let info=fs.readFileSync('src/information.html','utf8').replace('Esta web no incorpora formularios de reserva, analítica ni publicidad. Las reservas se realizan por teléfono.','El formulario de reservas está en modo demostración: no envía ni almacena los datos introducidos y no realiza reservas. No incorpora analítica ni publicidad. Las reservas reales deben confirmarse directamente con el restaurante.').replace('Mostramos una selección de extractos con sus autores.','Mostramos 143 extractos de reseñas de cinco estrellas con sus autores, consultados directamente en Google Maps el 06/11/2026. Se conserva el texto mostrado por Google, incluidas sus traducciones al inglés. La valoración de 4,6 y las 1.540 reseñas corresponden al total, no solo a esta selección.');fs.writeFileSync('src/information.html',info);

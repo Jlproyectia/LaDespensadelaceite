@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+let s=fs.readFileSync('redesign.mjs','utf8');
+s=s.replace("[['index.html','Inicio'],['carta.html','La carta'],['celebraciones.html','Celebraciones'],['galeria.html','La galería']]","[['index.html','La Despensa'],['carta.html','Qué comer'],['index.html#especialidades','Nuestra cocina'],['index.html#visit','Dónde estamos']]");
+s=s.replace("current===name?", "(current==='Inicio'&&name==='La Despensa'||current==='La carta'&&name==='Qué comer')?");
+s=s.replace('site.js?v=5','site.js?v=6');
+const start=s.indexOf('<section class="hero">');
+const end=s.indexOf('</section>',start)+10;
+const hero=`<section class="hero despensa-hero"><div class="hero-image">\${photo('hero-despensa','Ibéricos, queso y aceite de oliva sobre la mesa de La Despensa, recreación con IA','',true)}</div><div class="hero-shade"></div><div class="wrap hero-copy"><p class="eyebrow"><span class="olive-dot"></span> La Despensa del Aceite · Fuengirola</p><h1>De buen producto.<br><em>De buen comer.</em></h1><p>Ibéricos de Los Pedroches, cocina española<br>y aceite de oliva. Lo nuestro, para compartir.</p><div class="hero-actions">\${button('carta.html','Explorar la carta')}\${link('#visit','Reservar una mesa')}</div><a class="hero-review" href="\${reviews}" \${ext}><span class="stars">★★★★★</span><strong>4,6</strong><span>1.540 opiniones en Google</span> ↗</a></div><div class="wrap hero-bottom"><span>Cocina española · Calle San Antonio, 17</span><a href="#especialidades">A nuestra mesa ↓</a></div></section><section class="despensa-intro wrap" data-reveal><p class="eyebrow">El gusto por lo nuestro</p><h2>Pan, aceite.<br><em>Y algo bueno al centro.</em></h2><div><p>Una tabla de ibéricos, unas croquetas, la carne en su punto. Platos para compartir y disfrutar sin prisas, en nuestra terraza de Fuengirola.</p>\${link('carta.html','Encuentra tu próximo favorito')}</div></section>`;
+s=s.slice(0,start)+hero+s.slice(end);
+s=s.replace('${xp.celebrationTeaser()}','');
+s=s.replace('<h1>Nuestra carta.<br><em>A tu gusto.</em></h1>','<h1>La carta<br><em>de La Despensa.</em></h1>');
+s=s.replace('<p>Empieza por tus favoritos.<br>Deja sitio para descubrir algo más.</p>','<p>Ibéricos, cocina de siempre y un final dulce.<br>Elige lo que te apetece compartir.</p>');
+s=s.replace('images/${name}.webp 1536w','images/${name}.webp 1536w, images/${name}-4k.webp 3840w');
+s=s.replace('data-photo="images/${asset(name)}.webp"','data-photo="images/${asset(name)}-4k.webp"');
+s=s.replace("fs.copyFileSync('src/site.css','dist/site.css');","fs.writeFileSync('dist/site.css',fs.readFileSync('src/site.css','utf8')+'\\n'+fs.readFileSync('src/despensa.css','utf8'));");
+fs.writeFileSync('redesign.mjs',s);
+let b=fs.readFileSync('build.mjs','utf8').replace('site.css?v=5','site.css?v=6');fs.writeFileSync('build.mjs',b);

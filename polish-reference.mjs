@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+let s=fs.readFileSync('redesign.mjs','utf8');
+s=s.replace('class="brand">La Despensa','class="brand"><span class="brand-seal" aria-hidden="true">DA</span>La Despensa');
+s=s.replace('const galleryContent=()=>`<div class="house-grid">','const galleryContent=()=>`<div class="house-grid" id="house-track">');
+s=s.replace("figcaption></figure>`).join('')}</div>`;", "figcaption></figure>`).join('')}</div><div class=\"gallery-controls\"><span>La cocina y los rincones de La Despensa</span><div><button class=\"gallery-prev\" aria-label=\"Fotografías anteriores\">←</button><button class=\"gallery-next\" aria-label=\"Fotografías siguientes\">→</button></div></div>`;");
+s=s.replace("<div class=\"visual-menu\">${[...menu.sections,",`<div class="category-cards">\${[...menu.sections,{name:'Pan y acompañamientos',items:menu.extras}].map((section,i)=>\`<button class="category-card" data-category="\${ids[i]||'extras'}"><div>\${photo(...categoryPhotos[i])}<span class="card-open" aria-hidden="true">↗</span></div><span class="category-card-copy"><span class="eyebrow">\${String(i+1).padStart(2,'0')} · \${section.items.length} propuestas</span><strong>\${section.name.replace(' Los Pedroches (Córdoba)','')}</strong><span>Descubrir esta selección \${arrow}</span></span></button>\`).join('')}</div><div class="full-menu-heading"><p class="eyebrow">Todos nuestros platos</p><h2>La carta, <em>al completo.</em></h2></div><div class="visual-menu">\${[...menu.sections,`);
+s=s.replace('src="site.js?v=3"','src="site.js?v=4"');
+fs.writeFileSync('redesign.mjs',s);
+let js=fs.readFileSync('src/site.js','utf8');
+js=js.replace("clear.hidden=!value;document.querySelectorAll('[data-category]')", "clear.hidden=!value;document.querySelector('.category-cards').hidden=selected!=='all'||!!value;document.querySelector('.full-menu-heading').hidden=selected!=='all'||!!value;document.querySelector('.visual-menu').classList.toggle('has-selection',selected!=='all');document.querySelectorAll('[data-category]')");
+js=js.replace("selected=b.dataset.category;filter()", "selected=b.dataset.category;filter();if(b.classList.contains('category-card'))document.querySelector('.menu-toolbar').scrollIntoView({behavior:paused||preference.matches?'instant':'smooth',block:'start'})");
+js+=`\nconst track=document.querySelector('#house-track');if(track){document.querySelector('.gallery-prev')?.addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.8,behavior:paused||preference.matches?'instant':'smooth'}));document.querySelector('.gallery-next')?.addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.8,behavior:paused||preference.matches?'instant':'smooth'}));}\n`;
+fs.writeFileSync('src/site.js',js);
+let build=fs.readFileSync('build.mjs','utf8').replace('site.css?v=3','site.css?v=4');fs.writeFileSync('build.mjs',build);

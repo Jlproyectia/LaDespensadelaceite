@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "local-comedor-v7",
+    "source": "C:\\Users\\Leviç\\Downloads\\la despena\\WhatsApp Image 2026-11-06 at 20.49.38 (4).jpeg",
+    "path": "C:\\Users\\Leviç\\.codex\\generated_images\\01a1ac52-ea3d-7de1-893b-05e61b72979d\\exec-ca44e918-4417-4929-884b-705746db9c74.png",
+    "prompt": "main dining room. Preserve beige stacked stone walls, olive green columns, dark wood chairs, white barrel tables, terracotta plates, brass pendant lights, green patterned tile insets and timber floor. Remove jacket on chair only. Faithful editorial regeneration, natural warm light, preserve actual interior, landscape 3:2.",
+    "tool": "Built-in image generation"
+  },
+  {
+    "slug": "local-terraza-v7",
+    "source": "C:\\Users\\Leviç\\Downloads\\la despena\\WhatsApp Image 2026-11-06 at 20.49.38.jpeg",
+    "path": "C:\\Users\\Leviç\\.codex\\generated_images\\01a1ac52-ea3d-7de1-893b-05e61b72979d\\exec-24011a12-e884-4e0e-af05-befd00960bc9.png",
+    "prompt": "street terrace entrance. Preserve yellow facade, trees, white shutters, actual dark wicker chairs, white topped tables, green umbrellas, stone paving and wood doorway. No invented architecture. Faithful editorial regeneration, natural warm light, preserve actual interior, landscape 3:2.",
+    "tool": "Built-in image generation"
+  },
+  {
+    "slug": "local-rincon-v7",
+    "source": "C:\\Users\\Leviç\\Downloads\\la despena\\WhatsApp Image 2026-11-06 at 20.49.38 (5).jpeg",
+    "path": "C:\\Users\\Leviç\\.codex\\generated_images\\01a1ac52-ea3d-7de1-893b-05e61b72979d\\exec-04a60053-5dc0-42e9-bc2e-a02d79839b78.png",
+    "prompt": "intimate indoor corner with two round white barrel tables, taupe upholstered stools, stone wall and two irregular wood-framed mirrors. Remove photographer reflection only, preserve reflections of room and exact furniture. Faithful editorial regeneration, natural warm light, preserve actual interior, landscape 3:2.",
+    "tool": "Built-in image generation"
+  },
+  {
+    "slug": "local-jamones-v7",
+    "source": "C:\\Users\\Leviç\\Downloads\\la despena\\WhatsApp Image 2026-11-06 at 20.49.39 (2).jpeg",
+    "path": "C:\\Users\\Leviç\\.codex\\generated_images\\01a1ac52-ea3d-7de1-893b-05e61b72979d\\exec-6ca139c7-986c-4e87-ae12-cc233190b9a9.png",
+    "prompt": "ham counter detail. Focus on real hanging hams, wooden panel, black counter with ham stands and terracotta crockery. Remove cardboard packaging and person in doorway for clean editorial image, but retain real layout and equipment. Do not invent labels. Faithful editorial regeneration, natural warm light, preserve actual interior, landscape 3:2.",
+    "tool": "Built-in image generation"
+  }
+]

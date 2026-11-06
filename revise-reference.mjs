@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+let s=fs.readFileSync('redesign.mjs','utf8');
+s=s.replace("const asset=name=>replacements[name]||name;","const asset=name=>{const n=replacements[name]||name;return n.startsWith('local-')?n.replace('local-','editorial-'):n;};");
+s=s.replace("['index.html#galeria','El restaurante']","['galeria.html','La galería']");
+s=s.replace('href="site.css"','href="site.css?v=3"').replace('src="site.js"','src="site.js?v=3"');
+const start=s.indexOf("page('index.html'");
+const end=s.indexOf('const categoryPhotos=',start);
+const previous=s.slice(start,end);
+const visit=previous.slice(previous.indexOf('<section class="visit-section'),previous.lastIndexOf('`);'));
+const gallery=`const galleryItems=[['editorial-fachada','Nuestra casa'],['entrada-local','La bienvenida'],['editorial-ibericos','Ibéricos de Los Pedroches'],['editorial-ensaladas','Del huerto'],['editorial-delicatessen','Croquetas de la casa'],['editorial-pescados','Del mar'],['editorial-cerdo','Cerdo ibérico'],['editorial-ternera','Ternera del norte'],['editorial-brochetones','A la parrilla'],['editorial-alpargatas','Nuestras alpargatas'],['editorial-postres','El final dulce'],['editorial-acompanamientos','Pan y aceite'],['terraza','La terraza'],['rincon-terraza','La sobremesa']];
+const galleryContent=()=>\`<div class="house-grid">\${galleryItems.map(([im,title],i)=>\`<figure data-reveal>\${frame(im,title+', recreación con IA')}<figcaption><span>\${String(i+1).padStart(2,'0')}</span> \${title}</figcaption></figure>\`).join('')}</div>\`;
+const kitchen=[['editorial-ibericos','Ibéricos y quesos','Jamón de bellota de Los Pedroches, caña de lomo y queso curado.','ibericos'],['editorial-cerdo','Carnes de nuestra tierra','Presa, secreto, pluma y solomillo ibérico, con tu guarnición favorita.','cerdo-iberico'],['editorial-pescados','Del mar a la mesa','Merluza La Despensa, salmón al eneldo y bacalao a la riojana.','pescados'],['editorial-postres','Un final dulce','Tarta de queso, tres chocolates o brownie con helado.','postres']];
+`;
+const home="page('index.html','La Despensa del Aceite · Cocina española en Fuengirola','Ibéricos, cocina española y sobremesas en Fuengirola. Descubre nuestra carta.','Inicio',`"+
+`<section class="hero"><div class="hero-image">\${photo('editorial-fachada','La fachada y terraza de La Despensa, recreación con IA','',true)}</div><div class="hero-shade"></div><div class="wrap hero-copy"><p class="eyebrow">Fuengirola, Málaga · Cocina española</p><h1>La buena mesa.<br><em>La buena compañía.</em></h1><p>El sabor de lo nuestro.<br>El placer de compartirlo.</p><div class="hero-actions">\${button('carta.html','Descubre nuestra carta')}\${button('#visit','Reserva tu mesa')}</div></div><div class="wrap hero-bottom"><a href="#galeria">Descubre La Despensa ↓</a><span>Calle San Antonio, 17</span></div></section>
+<section class="gallery-section wrap" id="galeria"><div class="section-heading" data-reveal><div><p class="eyebrow">01 · Así es La Despensa</p><h2>Nuestra casa,<br><em>de cerca.</em></h2></div><div><p>Los platos, la terraza y los pequeños detalles.<br>Un primer vistazo a lo que te espera.</p>\${link('galeria.html','Explorar la galería')}</div></div>\${galleryContent()}</section>
+<section class="kitchen-section wrap" id="especialidades"><p class="eyebrow">02 · Cocina para disfrutar</p><h2>Buen producto.<br><em>Y ganas de compartir.</em></h2><div class="kitchen-tabs" role="tablist" aria-label="Especialidades">\${kitchen.map((k,i)=>\`<button role="tab" id="kitchen-tab-\${i}" aria-selected="\${i===0}" aria-controls="kitchen-panel-\${i}" tabindex="\${i===0?0:-1}">\${k[1]}</button>\`).join('')}</div>\${kitchen.map(([im,title,copy,id],i)=>\`<div class="kitchen-panel" role="tabpanel" id="kitchen-panel-\${i}" aria-labelledby="kitchen-tab-\${i}" \${i?'hidden':''}><div>\${photo(im,title+', recreación con IA')}</div><div class="kitchen-copy"><span class="eyebrow">0\${i+1} / 04</span><h3>\${title}.</h3><p>\${copy}</p>\${link('carta.html#'+id,'Ver en la carta')}</div></div>\`).join('')}</section>
+<section class="atmosphere"><div class="atmosphere-image">\${photo('terraza','La terraza de La Despensa, recreación con IA')}</div><div class="atmosphere-shade"></div><div class="wrap" data-reveal><p class="eyebrow">03 · Alrededor de una mesa</p><h2>Una comida tranquila.<br><em>Una sobremesa larga.</em></h2>\${button('tel:+34951438845','Reservar por teléfono')}</div></section>
+<section class="reviews-section"><div class="wrap"><div class="section-heading" data-reveal><div><p class="eyebrow">04 · Quienes ya han venido</p><h2>Las ganas<br><em>de volver.</em></h2></div><div class="proof-aside">\${rating()}\${link(reviews,'Leer todas en Google',ext)}</div></div>\${reviewCards()}<p class="source-note">Extractos de opiniones · Valoración consultada el 5 de noviembre de 2026.</p></div></section>
+`+visit.replace("frame('fachada'","frame('editorial-fachada'")+"`);\n";
+s=s.slice(0,start)+gallery+home+s.slice(end);
+// Gallery is a real destination with the same image enlargement interaction.
+s=s.replace("const oldInfo=", "page('galeria.html','La galería · La Despensa del Aceite','Descubre la cocina y los rincones de La Despensa.','La galería',`<section class=\"gallery-section wrap\"><div class=\"section-heading\"><div><p class=\"eyebrow\">La Despensa, en imágenes</p><h1>El sabor.<br><em>El lugar.</em></h1></div><p>Nuestra cocina y nuestros rincones.</p></div>${galleryContent()}</section>`);\nconst oldInfo=");
+s=s.replace('<h1>Hecha para<br><em>compartir.</em></h1>','<h1>Nuestra carta.<br><em>A tu gusto.</em></h1>');
+// Place category filters above a visual two-column menu, retaining every original dish.
+s=s.replace('<aside class="menu-sidebar">','<aside class="menu-sidebar"><button class="menu-filter is-active" data-category="all" aria-pressed="true">Toda la carta</button>');
+s=s.replace('<a href="#${ids[i]}"><span>','<a class="menu-filter" data-category="${ids[i]}" href="#${ids[i]}"><span>');
+s=s.replace('<a href="#extras"><span>','<a class="menu-filter" data-category="extras" href="#extras"><span>');
+s=s.replace('${[...menu.sections,','<div class="visual-menu">${[...menu.sections,');
+s=s.replace(".join('')}<div class=\"allergen-note\">",".join('')}</div><div class=\"allergen-note\">");
+fs.writeFileSync('redesign.mjs',s);
