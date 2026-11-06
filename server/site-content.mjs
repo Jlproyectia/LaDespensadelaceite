@@ -11,7 +11,7 @@ function media(value,type){
   if(type==='video'){try{const url=new URL(value);if(url.protocol==='https:'&&!url.username&&!url.password&&url.pathname.endsWith('.mp4'))return value;}catch{}}
   fail(400,type==='image'?'Sube una imagen JPG, PNG o WebP.':'Introduce un enlace HTTPS directo a un vídeo MP4.');
 }
-function link(value){if(/^(?:#[a-zA-Z0-9_-]+|(?:index|carta|celebraciones|galeria|informacion)(?:\.en)?\.html(?:#[a-zA-Z0-9_-]+)?)$/.test(value))return value;try{const u=new URL(value);if(['https:','http:','tel:','mailto:'].includes(u.protocol)&&!u.username&&!u.password)return value;}catch{}fail(400,'Enlace no válido. Usa una página de la web, HTTPS, teléfono o correo.');}
+function link(value){if(/^(?:#[a-zA-Z0-9_-]+|(?:index|carta|celebraciones|galeria|informacion|opiniones)(?:\.en)?\.html(?:#[a-zA-Z0-9_-]+)?)$/.test(value))return value;try{const u=new URL(value);if(['https:','http:','tel:','mailto:'].includes(u.protocol)&&!u.username&&!u.password)return value;}catch{}fail(400,'Enlace no válido. Usa una página de la web, HTTPS, teléfono o correo.');}
 export async function saveSite(store,action,data){
   if(action==='content'){
     const field=fields.find(f=>f.id===data.id);if(!field)fail(404,'Contenido no encontrado.');
