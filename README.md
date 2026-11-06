@@ -6,7 +6,7 @@ El selector superior ES / EN abre la misma página en español o inglés. Las se
 
 `build-languages.mjs` genera las versiones inglesas con `data/ui-en.json` y `data/attributes-en.json`. `data/reviews-es.txt` contiene los 143 extractos traducidos al español, en el mismo orden que los textos conservados en `data/google-five-star.tsv`. `src/i18n.js` traduce los mensajes dinámicos y define el idioma del calendario. La compilación detecta textos sin traducción; `npm run check` comprueba las doce páginas, los enlaces de idioma y las reseñas.
 
-Sitio estático de cuatro páginas, en español. `npm run build` genera dist; `npm run check` valida enlaces, datos e imágenes; `npm start` abre el servidor local en el puerto 4173.
+Sitio de seis páginas en español e inglés, con administración y almacenamiento persistente. `npm run build` genera dist; `npm run check` valida enlaces, datos e imágenes; `npm start` abre el servidor local en el puerto 4173.
 
 ## Edición
 - `redesign.mjs`: estructura y textos de las páginas.
@@ -32,3 +32,11 @@ Búsqueda de croquetas: 3 resultados. Consulta inexistente: aviso específico. B
 Datos contrastados el 05/11/2026. Horarios sujetos a festivos. Las reservas enlazan al teléfono real; no hay formulario ficticio ni analítica.
 
 Validación final: 15 fotografías únicas, 11 fotos distintas de categoría, 104 enlaces y recursos locales comprobados, 63 filas de carta. Capturas finales en shots/final-home-1440.png y shots/final-carta-390.png. Referencias fotográficas finales en data/local-category-images.json.
+
+## Administración
+
+Acceso desde Administración al pie de página o `/admin.html`. El PIN se valida en el servidor; no se incluye en los archivos públicos. El panel permite editar platos, precios, medias raciones, disponibilidad, fotografías, categorías, textos ES/EN, enlaces, metadatos, horarios y cierres excepcionales. Los cambios se publican al guardar y se cargan para todos los visitantes mediante `/api/app?action=site`. Sin JavaScript o si el servicio falla se muestra la versión estática original.
+
+Producción requiere `ADMIN_PIN_HASH` (salt:scrypt64hex), `ADMIN_SESSION_SECRET`, `APP_ORIGIN` y `BLOB_READ_WRITE_TOKEN`, configurados en Vercel. El estado se almacena en un Blob privado con control de versiones; las imágenes se sirven por la API. No versionar credenciales.
+
+`node scripts/dev-admin.mjs` permite probar con almacenamiento local aislado. `npm run test:admin` comprueba autenticación, CSRF, límites de acceso, persistencia, conflictos de edición y validación. La reserva pública sigue siendo una demostración; el administrador no convierte el formulario en un sistema de reservas confirmado.

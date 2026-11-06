@@ -1,3 +1,5 @@
+import {siteReady} from './site-content.js';
+await siteReady;
 import {arrowIcon} from './icons.js';
 import {t} from './i18n.js';
 const section=document.querySelector('.kitchen-section');

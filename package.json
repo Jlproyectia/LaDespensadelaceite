@@ -1,1 +1,21 @@
-{"name":"la-despensa-del-aceite","private":true,"type":"module","scripts":{"build":"node build.mjs","start":"node serve.mjs","check":"node check.mjs"}}
+{
+  "name": "la-despensa-del-aceite",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node serve.mjs",
+    "check": "node check.mjs",
+    "test:admin": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2",
+    "parse5": "7.3.0"
+  },
+  "overrides": {
+    "zod": "4.6.6"
+  }
+}

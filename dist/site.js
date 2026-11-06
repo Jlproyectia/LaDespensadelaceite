@@ -1,3 +1,5 @@
+import {siteReady} from './site-content.js';
+await siteReady;
 import {t} from './i18n.js';
 const preference=matchMedia('(prefers-reduced-motion: reduce)');
 let paused=false;try{paused=localStorage.getItem('despensa-motion')==='off'}catch{}
@@ -31,7 +33,7 @@ if(location.hash&&document.getElementById(location.hash.slice(1))?.matches('[dat
 const beforePrint=()=>{selected='all';search.value='';filter()};document.querySelector('.print-menu')?.addEventListener('click',()=>{beforePrint();print()});addEventListener('beforeprint',beforePrint);
 }
 import './kitchen-scroll.js';
-const output=document.querySelector('[data-hours-status]');if(output){const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).map(p=>[p.type,p.value]));const minute=Number(parts.hour)*60+Number(parts.minute),day=parts.weekday;let text='Hoy cerrado';if(['Wed','Thu','Fri','Sat'].includes(day))text=minute>=780&&minute<990?'Abierto · hasta las 16:30':minute>=1200?'Abierto · hasta las 00:00':minute<780?'Hoy abrimos a las 13:00':'Hoy abrimos a las 20:00';if(day==='Sun')text=minute>=810&&minute<990?'Abierto · hasta las 16:30':minute<810?'Hoy abrimos a las 13:30':'Hoy cerrado';output.textContent=t(text)}
+const output=document.querySelector('[data-hours-status]');if(output&&!window.despensaSite){const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).map(p=>[p.type,p.value]));const minute=Number(parts.hour)*60+Number(parts.minute),day=parts.weekday;let text='Hoy cerrado';if(['Wed','Thu','Fri','Sat'].includes(day))text=minute>=780&&minute<990?'Abierto · hasta las 16:30':minute>=1200?'Abierto · hasta las 00:00':minute<780?'Hoy abrimos a las 13:00':'Hoy abrimos a las 20:00';if(day==='Sun')text=minute>=810&&minute<990?'Abierto · hasta las 16:30':minute<810?'Hoy abrimos a las 13:30':'Hoy cerrado';output.textContent=t(text)}
 
 const track=document.querySelector('#house-track');if(track){document.querySelector('.gallery-prev')?.addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.8,behavior:paused||preference.matches?'instant':'smooth'}));document.querySelector('.gallery-next')?.addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.8,behavior:paused||preference.matches?'instant':'smooth'}));}
 

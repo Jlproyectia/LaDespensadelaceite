@@ -20,5 +20,7 @@ fs.writeFileSync(`${out}/sitemap.xml`,`<?xml version="1.0" encoding="UTF-8"?><ur
 
 const {buildLanguages}=await import('./build-languages.mjs');
 buildLanguages();
+const {buildCMS}=await import('./scripts/cms-build.mjs');
+buildCMS();
 console.log('Built six pages in Spanish and English with 11 illustrated menu categories.');
 

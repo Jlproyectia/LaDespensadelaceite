@@ -10,3 +10,10 @@ research/
 qa-report/
 *.tar.gz
 *.backup
+.vercel
+
+.env*
+!.env.example
+.local-admin/
+
+.env*.local

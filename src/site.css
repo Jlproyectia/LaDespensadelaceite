@@ -65,3 +65,5 @@
 .booking-row{align-items:start}.booking-row>label{align-content:start}.search-wrap input::-webkit-search-cancel-button{display:none}
 
 .dessert-feature{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;padding-block:80px}.dessert-feature img{width:100%;aspect-ratio:4/3;object-fit:cover}.dessert-feature p:not(.eyebrow){max-width:380px;color:var(--muted);margin:25px 0}.dessert-feature h2{font-size:clamp(42px,5vw,76px)}@media(max-width:600px){.dessert-feature{grid-template-columns:1fr;gap:32px;padding-block:45px}}
+
+.brand > .cms-inline { font: inherit; letter-spacing: inherit; padding: 0; }
