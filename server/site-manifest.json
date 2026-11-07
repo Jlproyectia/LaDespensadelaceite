@@ -8605,30 +8605,6 @@
     "en": "Google review · 5/5"
   },
   {
-    "id": "83c451e780e9afb7950d",
-    "page": "index.html",
-    "section": "Las ganasde volver.",
-    "type": "text",
-    "value": "Selección de 143 reseñas de 5 estrellas ·",
-    "en": "Selection of 143 five-star reviews ·"
-  },
-  {
-    "id": "a68b0e1cbf5874bcd68d",
-    "page": "index.html",
-    "section": "Las ganasde volver.",
-    "type": "text",
-    "value": "01",
-    "en": "01"
-  },
-  {
-    "id": "7a323af13b8bad0fb7d4",
-    "page": "index.html",
-    "section": "Las ganasde volver.",
-    "type": "text",
-    "value": "/ 143",
-    "en": "/ 143"
-  },
-  {
     "id": "06143025335b09b7d275",
     "page": "index.html",
     "section": "Nos vemosen La Despensa.",
@@ -8726,14 +8702,6 @@
     "type": "text",
     "value": "Cómo llegar",
     "en": "Get directions"
-  },
-  {
-    "id": "868dc00e17d4d6cc038e",
-    "page": "index.html",
-    "section": "Nos vemosen La Despensa.",
-    "type": "text",
-    "value": "Terraza y comedor interior. Consulta festivos por teléfono.",
-    "en": "Terrace and indoor dining. Please call to check public holiday opening hours."
   },
   {
     "id": "16e3bb7debc510ef0712",
@@ -9580,14 +9548,6 @@
     "type": "text",
     "value": "Cómo llegar",
     "en": "Get directions"
-  },
-  {
-    "id": "4fd4ca74bac980b57aaf",
-    "page": "carta.html",
-    "section": "Nos vemosen La Despensa.",
-    "type": "text",
-    "value": "Terraza y comedor interior. Consulta festivos por teléfono.",
-    "en": "Terrace and indoor dining. Please call to check public holiday opening hours."
   },
   {
     "id": "d239f0f5ec02903d06e5",
@@ -10660,14 +10620,6 @@
     "type": "text",
     "value": "Cómo llegar",
     "en": "Get directions"
-  },
-  {
-    "id": "3153b14d6d93d712dc26",
-    "page": "celebraciones.html",
-    "section": "Nos vemosen La Despensa.",
-    "type": "text",
-    "value": "Terraza y comedor interior. Consulta festivos por teléfono.",
-    "en": "Terrace and indoor dining. Please call to check public holiday opening hours."
   },
   {
     "id": "3c7c9361affaf4795e2f",
@@ -17840,30 +17792,6 @@
     "type": "text",
     "value": "Reseña de Google · 5/5",
     "en": "Google review · 5/5"
-  },
-  {
-    "id": "32b9ca69d64f53558b75",
-    "page": "opiniones.html",
-    "section": "General",
-    "type": "text",
-    "value": "Selección de 143 reseñas de 5 estrellas ·",
-    "en": "Selection of 143 five-star reviews ·"
-  },
-  {
-    "id": "e8864637e6c7d2ba6b03",
-    "page": "opiniones.html",
-    "section": "General",
-    "type": "text",
-    "value": "01",
-    "en": "01"
-  },
-  {
-    "id": "6c31395b17e70665353e",
-    "page": "opiniones.html",
-    "section": "General",
-    "type": "text",
-    "value": "/ 143",
-    "en": "/ 143"
   },
   {
     "id": "80b0ed6d44b3f6016ccd",

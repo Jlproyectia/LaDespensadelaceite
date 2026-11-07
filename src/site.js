@@ -20,7 +20,7 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>closeNav())
 addEventListener('keydown',e=>{if(toggle?.getAttribute('aria-expanded')!=='true')return;if(e.key==='Escape'){closeNav(true)}if(e.key==='Tab'){const items=[...header.querySelectorAll('a,button')].filter(el=>el.getClientRects().length);const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
 matchMedia('(min-width:801px)').addEventListener('change',e=>{if(e.matches)closeNav()});
 const dialog=document.querySelector('.photo-dialog');let photoTrigger;
-document.querySelectorAll('[data-photo]').forEach(b=>b.addEventListener('click',()=>{photoTrigger=b;const im=dialog.querySelector('img');im.src=b.dataset.photo;im.alt=b.dataset.caption;dialog.querySelector('p').textContent=b.dataset.caption;dialog.showModal()}));
+document.querySelectorAll('[data-photo]').forEach(b=>b.addEventListener('click',()=>{photoTrigger=b;const im=dialog.querySelector('img');im.src=b.dataset.photo;im.alt=b.dataset.caption;dialog.showModal()}));
 dialog?.querySelector('.photo-close').addEventListener('click',()=>dialog.close());dialog?.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog?.addEventListener('close',()=>photoTrigger?.focus());
 const search=document.querySelector('#dish-search'),clear=document.querySelector('.clear-search');
 if(search){
