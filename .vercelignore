@@ -1,0 +1,15 @@
+.git/
+.env*
+.browser-*/
+.local-admin/
+.openai/
+.taste-skill/
+node_modules/
+source-images/
+research/
+shots/
+qa-report/
+*.backup
+*.zip
+*.tar.gz
+*.log
