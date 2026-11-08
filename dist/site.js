@@ -39,3 +39,5 @@ const track=document.querySelector('#house-track');if(track){document.querySelec
 
 
 import './experience.js';
+
+await import('./oil-scroll.js');
